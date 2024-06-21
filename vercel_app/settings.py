@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'djoser',
+    'accounts',
+    'store',
+    'vendor',
     
 ]
 
@@ -71,7 +74,7 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:3000',
     'http://localhost:3000',
-    'https://inclusify-donation-platform.vercel.app'
+   
 ]
 
 CORS_ORIGIN_ALLOW_ALL = False
@@ -175,9 +178,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 JAZZMIN_SETTINGS = {
     'site_header':"Inclusify",
-    'site_brand':"Donate for those in need",
+    'site_brand':"Your order",
     'site_logo':"img/inclusify-logo.png",
-    'copyright':"mittalmart.com",
+    'copyright':"Inclusify",
 
 }
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
