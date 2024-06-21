@@ -44,8 +44,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'djoser',
-    'accounts',
-    'campaigns',
+    
 ]
 
 MIDDLEWARE = [
