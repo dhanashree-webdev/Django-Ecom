@@ -89,7 +89,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'core.wsgi.application'
+WSGI_APPLICATION = 'core.wsgi.app'
 AUTH_USER_MODEL='accounts.Account'
 
 # Database
@@ -155,10 +155,10 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 JAZZMIN_SETTINGS = {
-    'site_header':"Mittal Mart",
+    'site_header':"Inclusify",
     'site_brand':"your order, we deliver",
-    'site_logo':"img/mittal_mart_logo.png",
-    'copyright':"mittalmart.com",
+    'site_logo':"img/logo.png",
+    'copyright':"Inclusify.vercel.com",
 
 }
 ###### SMTP configuration #######
