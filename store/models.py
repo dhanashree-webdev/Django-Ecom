@@ -58,8 +58,8 @@ class Product(models.Model):
     short_description = models.TextField(null=True, blank=True, default="this is the product")
     description = models.TextField(null=True, blank=True, default="this is good product")
 
-    price=models.DecimalField(max_digits=99999999999999,decimal_places=2,default="99.00")
-    sales_price=models.DecimalField(max_digits=99999999999999,decimal_places=2,null=True,blank=True)
+    price = models.DecimalField(max_digits=10, decimal_places=2, default="99.00")
+    sales_price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
 
     specification=models.TextField(null=True, blank=True, default="Net Quantity:1")
 
