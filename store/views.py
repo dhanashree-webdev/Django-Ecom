@@ -12,10 +12,9 @@ logger = logging.getLogger(__name__)
 
 # Create your views here.
 class All_products(APIView):
-    def get(self,request):
-        product=Product.objects.all().order_by('?') 
-        serializer=MultipleProductSerialzer(product,many=True)
-        print(product)
+     def get(self, request):
+        product = Product.objects.all().prefetch_related('categories') 
+        serializer = MultipleProductSerialzer(product, many=True)
         return Response(serializer.data)
     
 class All_Categories(APIView):
